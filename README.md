@@ -50,5 +50,28 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 
 <br> CPU operating voltage range of 1.65V to 1.95V and I/O power supply range of 3.0V to 3.6V
 
+<br> PORT0 - 32 PIN  and  PORT1 - 16 PIN
+
+### IODIR:GPIO Direction Control Register - 32 bit register
+<br> 0-input
+<br> 1-output
+
+### IOSET:Port Output Set Register - 32 bit register
+<br> 0 - no effect
+<br> 1 - high
+
+### IOPIN: GPIO Port Pin Value Register - 32 bit register
+<br> port pins perform only digital functions
+
+### IOCLR:Port Output Clear Register - 32 bit register
+<br> 0 - no effect
+<br> 1 - low
+
+### PINSEL: Pin Function Select Register - 32 bit register
+<br> PINSEL0 – Controls functions of Port0.0 – Port0.15
+<br> PINSEL1 – Controls functions of Port0.16-Port0.31
+<br> PINSEL2 – Controls functions of Port1.16-Port1.31
+
+
 
 
