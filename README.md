@@ -73,5 +73,11 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 <br> PINSEL2 – Controls functions of Port1.16-Port1.31
 
 
+## BINARY TO HEXADECIMAL CONVERSION
+
+![b2h](https://github.com/user-attachments/assets/c38418aa-aa48-46aa-bb84-6c4d9ac992a4)
+
+
+
 
 
