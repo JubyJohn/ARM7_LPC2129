@@ -4,6 +4,30 @@
 #include<lpc21xx.h>
 void Delay(unsigned long val);
 
+int main()
+{
+  IO0DIR = 0XFFFFFFFF;         /* Set Port0 as output                                                 */
+  while(1)                     /* Infinite loop                                                       */
+   {
+     IO0SET = 0XFFFFFFFF;      /* Set Port0 at logic high state                           */
+     Delay(1000000);           /* Delay of 100ms                                                      */
+     IO0CLR = 0XFFFFFFFF;      /* Set Port0 at logic low state                            */
+     Delay(1000000);
+   }
+   return 0;
+}
+void Delay(unsigned long val)
+{
+   while(val>0)
+   {
+     val--;
+   }
+}
+
+2) LED BLINK ON PORT0 PIN SELECTION
+#include<lpc21xx.h>
+void Delay(unsigned long val);
+
 void main()
 {
   IO0DIR = 0XFFFFFFFF;         /* Set Port0 as output                                                 */
@@ -23,7 +47,7 @@ void Delay(unsigned long val)
    }
 }
 
-2) LED BLINK ON PORT0 PIN SELEC
+2) LED PATTERN ON PORT0
 #include<lpc21xx.h>
 void Delay(unsigned long val);
 
@@ -37,6 +61,30 @@ void main()
      IO0CLR = 0X000E0000;      /* Set P0.17,P0.18,P0.19 at logic low state                            */
      Delay(1000000);
    }
+}
+void Delay(unsigned long val)
+{
+   while(val>0)
+   {
+     val--;
+   }
+}
+
+4) LED BLINK ON PORT1
+#include<lpc21xx.h>
+void Delay(unsigned long val);
+
+int main()
+{
+  IO1DIR = 0XFFFFFFFF;         /* Set Port1 as output                                                 */
+  while(1)                     /* Infinite loop                                                       */
+   {
+     IO1SET = 0XFFFFFFFF;      /* Set Port1 at logic high state                           */
+     Delay(1000000);           /* Delay of 100ms                                                      */
+     IO1CLR = 0XFFFFFFFF;      /* Set Port1 at logic low state                            */
+     Delay(1000000);
+   }
+   return 0;
 }
 void Delay(unsigned long val)
 {
