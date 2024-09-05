@@ -83,14 +83,14 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 
 <br> 0x00010000
 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<--
-<br> 0-3  => 1 value
-<br> 4-7  => 2 value
-<br> 8-11  => 3 value
-<br> 12-15  => 4 value    
-<br> 16-19  => 5 value
-<br> 20-23  => 6 value
-<br> 24-27  => 7 value
-<br> 28-31  => 8 value
+<br> 0-3  => 1st value
+<br> 4-7  => 2nd value
+<br> 8-11  => 3rd value
+<br> 12-15  => 4th value 
+<br> 16-19  => 5th value
+<br> 20-23  => 6th value
+<br> 24-27  => 7th value
+<br> 28-31  => 8th value
 
 <br> eg:0x00008000 =15 pin
 <br>
