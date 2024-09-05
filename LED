@@ -56,9 +56,17 @@ void main()
   IO0DIR = 0XFFFFFFFF;         /* Set Port0 as output                                                 */
   while(1)                     /* Infinite loop                                                       */
    {
-     IO0SET = 0X000E0000;      /* Set P0.17,P0.18,P0.19 at logic high state                           */
+     IO0SET = 0X00020000;      /* Set P0.17 at logic high state                           */
      Delay(1000000);           /* Delay of 100ms                                                      */
-     IO0CLR = 0X000E0000;      /* Set P0.17,P0.18,P0.19 at logic low state                            */
+     IO0CLR = 0X00020000;      /* Set P0.17 at logic low state                            */
+
+     IO0SET = 0X00040000;      /* Set P0.18 at logic high state                           */
+     Delay(1000000);           /* Delay of 100ms                                                      */
+     IO0CLR = 0X00040000;      /* Set P0.18 at logic low state                            */
+
+     IO0SET = 0X00080000;      /* Set P0.19 at logic high state                           */
+     Delay(1000000);           /* Delay of 100ms                                                      */
+     IO0CLR = 0X00080000;      /* Set P0.17,P0.18,P0.19 at logic low state                            */
      Delay(1000000);
    }
 }
