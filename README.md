@@ -81,7 +81,8 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 0x00000000 = 8*4 => 32 bit binary
 
 
-0x00010000
+<br> 0x00010000
+<br> &ensp;&ensp;<--
 <br> 0-3  => 1 value
 <br> 4-7  => 2 value
 <br> 8-11  => 3 value
