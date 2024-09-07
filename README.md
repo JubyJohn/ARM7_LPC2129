@@ -97,6 +97,14 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 ![Screenshot 2024-09-05 112047](https://github.com/user-attachments/assets/2e012987-4a5d-4aea-95b6-f4e586099a23)
 
 
+## 7 SEGMENT DESIGN
+
+![7_segment_display_labeled svg (1)](https://github.com/user-attachments/assets/acbec58b-5c58-47a5-9be9-2312c812bf90)
+
+
+
+
+
   
 
 
