@@ -1,1 +1,65 @@
+1) SWITCH INTERFACING
+
+#include<lpc21xx.h>
+int main()
+{
+  while(1)
+  {
+  IODIR0 &= (~(0x01<<21));  // INPUT
+  IODIR0 |= (0x01<<15);	  // OUTPUT
+  	if((1<<21) & IOPIN0)
+  	{
+  	IOSET0 |=(0x01<<15);
+  	}
+  	else
+  	{
+  	IOCLR0 |=(0x01<<15);
+  	}
+  }
+return 0;
+}
+
+
+2) 2 SWITCH INTERFACING
+
+#include <lpc21xx.h>
+
+void setupGPIO(void) {
+    // Configure P0.0 and P0.1 as inputs for switches
+    IODIR0 &= ~(1 << 5);  // P0.5 as input
+    IODIR0 &= ~(1 << 21);  // P0.21 as input
+
+    // Configure P0.2 and P0.3 as outputs for LEDs
+    IODIR0 |= (1 << 0);   // P0.0 as output
+    IODIR0 |= (1 << 15);   // P0.15 as output
+
+    // Initialize LEDs to off
+    IOCLR0 = (1 << 0);    // Turn off LED 1 (P0.2)
+    IOCLR0 = (1 << 15);    // Turn off LED 2 (P0.3)
+}
+
+void controlLEDs(void) {
+    // Read the state of switches and control LEDs accordingly
+    if (IOPIN0 & (1 << 5)) {  // Check if switch 1  is pressed
+        IOSET0 = (1 << 0);    // Turn on LED 1 
+    } else {
+        IOCLR0 = (1 << 0);    // Turn off LED 1 
+    }
+
+    if (IOPIN0 & (1 << 21)) {  // Check if switch 2  is pressed
+        IOSET0 = (1 << 15);    // Turn on LED 2 
+    } else {
+        IOCLR0 = (1 << 15);    // Turn off LED 2 
+    }
+}
+
+int main(void) {
+    setupGPIO();  // Configure GPIO pins
+
+    while (1) {
+        controlLEDs();  // Check switch states and control LEDs
+    }
+
+    return 0;  // This line will never be reached
+}
 
