@@ -104,8 +104,10 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 
 ## LIQUID CRYSTAL DISPLAY 16X2 (LCD)
 
-<br> VSS (Ground/Source Pin): This is a GND pin of display, used to connect the GND terminal of the microcontroller unit or power source.
-<br> VDD (VCC/Source Pin): This is the voltage supply pin of the display, used to connect the supply pin of the power source.
+<br> VSS (Ground/Source Pin):
+<br> &ensp;&ensp;&ensp;&ensp;This is a GND pin of display, used to connect the GND terminal of the microcontroller unit or power source.
+<br> VDD (VCC/Source Pin): 
+This is the voltage supply pin of the display, used to connect the supply pin of the power source.
 <br> VEE (V0/VEE/Control Pin): This pin regulates the difference of the display, used to connect a changeable POT that can supply 0 to 5V.
 <br> RS (Register Select/Control Pin): This pin toggles among command or data register, used to connect a microcontroller unit pin and obtains either 0 or 1(0 = data mode, and 1 = command mode).
 <br> R/W (Read/Write/Control Pin): This pin toggles the display among the read or writes operation, and it is connected to a microcontroller unit pin to get either 0 or 1 (0 = Write Operation, and 1 = Read Operation).
