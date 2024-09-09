@@ -103,6 +103,8 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 ![Screenshot 2024-09-07 100800](https://github.com/user-attachments/assets/5b97bc19-22b1-45ab-8ae3-db3ea54468ea)
 
 ## LIQUID CRYSTAL DISPLAY 16X2 (LCD)
+![16x2-lcd](https://github.com/user-attachments/assets/a7c45bc9-fb74-4990-ba5f-d645e6ccc585)
+
 
 <br> - VSS (Ground/Source Pin):
 <br> &ensp;&ensp;&ensp;&ensp;This is a GND pin of display, used to connect the GND terminal of the microcontroller unit or power source.
@@ -119,6 +121,7 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 <br> - Pins 7-14 (Data Pins): 
 <br> &ensp;&ensp;&ensp;&ensp;These pins are used to send data to the display. These pins are connected in two-wire modes like 4-wire mode and 8-wire mode. In 4-wire mode, only four pins are connected to the microcontroller unit like 0 to 3, whereas in 8-wire mode, 8-pins are connected to microcontroller unit like 0 to 7.
 
+Reference: https://www.elprocus.com/lcd-16x2-pin-configuration-and-its-working/
 
 
 
