@@ -9,11 +9,11 @@ int main()
   IODIR0 |= (0x01<<15);	  // OUTPUT
   	if((1<<21) & IOPIN0)
   	{
-  	IOSET0 |=(0x01<<15);
+  	IOCLR0 |=(0x01<<15);
   	}
   	else
   	{
-  	IOCLR0 |=(0x01<<15);
+  	IOSET0 |=(0x01<<15);
   	}
   }
 return 0;
