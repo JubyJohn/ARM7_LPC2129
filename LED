@@ -101,3 +101,30 @@ void Delay(unsigned long val)
      val--;
    }
 }
+
+5) LED BLINK ON PORT0 WITH SWIFT
+
+#include<lpc21xx.h>
+void delay(int);
+int main()
+{
+IODIR0 = (1<<17); //OUTPUT
+while(1)
+{
+	IOSET0 =(1<<17);
+	delay(100);
+	IOCLR0 =(1<<17);
+	delay(100);	
+}
+return 0;
+}
+
+void delay(int k)              //Function for making delay
+
+{
+    int i,j;
+
+    for(i=0;i<k;i++)
+
+    for(j=0;j<=1000;j++);
+}
