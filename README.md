@@ -102,6 +102,17 @@ ARM7 is a group of 32-bit RISC processor cores that can be used in microcontroll
 ![7_segment_display_labeled svg (1)](https://github.com/user-attachments/assets/acbec58b-5c58-47a5-9be9-2312c812bf90)
 ![Screenshot 2024-09-07 100800](https://github.com/user-attachments/assets/5b97bc19-22b1-45ab-8ae3-db3ea54468ea)
 
+## LIQUID CRYSTAL DISPLAY 16X2 (LCD)
+
+<br> VSS (Ground/Source Pin): This is a GND pin of display, used to connect the GND terminal of the microcontroller unit or power source.
+<br> VDD (VCC/Source Pin): This is the voltage supply pin of the display, used to connect the supply pin of the power source.
+<br> VEE (V0/VEE/Control Pin): This pin regulates the difference of the display, used to connect a changeable POT that can supply 0 to 5V.
+<br> RS (Register Select/Control Pin): This pin toggles among command or data register, used to connect a microcontroller unit pin and obtains either 0 or 1(0 = data mode, and 1 = command mode).
+<br> R/W (Read/Write/Control Pin): This pin toggles the display among the read or writes operation, and it is connected to a microcontroller unit pin to get either 0 or 1 (0 = Write Operation, and 1 = Read Operation).
+<br> E (Enable/Control Pin): This pin should be held high to execute Read/Write process, and it is connected to the microcontroller unit & constantly held high.
+<br> Pins 7-14 (Data Pins): These pins are used to send data to the display. These pins are connected in two-wire modes like 4-wire mode and 8-wire mode. In 4-wire mode, only four pins are connected to the microcontroller unit like 0 to 3, whereas in 8-wire mode, 8-pins are connected to microcontroller unit like 0 to 7.
+
+
 
 
 
