@@ -1,32 +1,32 @@
 //INTERFACING SINGLE SEVEN SEGMENT MODULE WITH LPC2148
 
-#include<lpc21xx.h>            //Header file for LPC214x Series microcontrollers
+#include<lpc21xx.h>          //Header file for LPC214x Series microcontrollers
 
-void delay(int );              //Function declaration for delay
+void delay(int );           //Function declaration for delay
 
-int i;                         //Variable declared as integer
+int i;                     //Variable declared as integer
 
 unsigned int a[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};     //integer array with numbers for display
 
 int main()
 { 
-    IO0DIR=IO0DIR|0xffffffff;              //Sets direction as output for PORT 0 pins
+    IO0DIR=IO0DIR|0xffffffff;           //Sets direction as output for PORT 0 pins
 
     while(1)
     {
         for(i=0;i<=9;i++)
         {
-            IO0SET=IO0SET|a[i];           //sets corresponding pins HIGH
+            IO0SET=IO0SET|a[i];        //sets corresponding pins HIGH
 
-            delay(100);                  //Calls delay function
+            delay(100);               //Calls delay function
 
-            IO0CLR=IO0CLR|a[i];           //Sets corresponding pins LOW
+            IO0CLR=IO0CLR|a[i];      //Sets corresponding pins LOW
         }
     }
     return 0;
 }
 
-void delay(int k)              //Function for making delay
+void delay(int k)                 //Function for making delay
 {
     int i,j;
 
